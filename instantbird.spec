@@ -20,6 +20,7 @@ BuildRequires:  alsa-lib-devel
 BuildRequires:  libnotify-devel
 BuildRequires:  wireless-tools-devel
 BuildRequires:  mesa-libGL-devel
+BuildRequires:  zip
 #Requires:       
 
 %description
