@@ -3,7 +3,7 @@ Version:        1.1
 Release:        1%{?dist}
 Summary:        Simple and powerful IM-client
 
-License:        MPL
+License:        GPLv2+
 URL:            http://instantbird.com
 Source0:        http://instantbird.com/downloads/%{version}/%{name}-%{version}.src.tgz
 
@@ -21,6 +21,8 @@ BuildRequires:  libnotify-devel
 BuildRequires:  wireless-tools-devel
 BuildRequires:  mesa-libGL-devel
 BuildRequires:  zip
+BuildRequires:  doxygen
+BuildRequires:  libgnomeui-devel
 #Requires:       
 
 %description
@@ -36,7 +38,7 @@ make -f client.mk build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+#make install DESTDIR=$RPM_BUILD_ROOT
 
 
 %files
